@@ -1,0 +1,764 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				}
+			]
+		},
+		{
+			"_type": "FCFlowchart",
+			"_id": "AAAAAAFt9gOBOQq9Cao=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Flowchart1",
+			"ownedElements": [
+				{
+					"_type": "FCFlowchartDiagram",
+					"_id": "AAAAAAFt9gOBOQq+qNA=",
+					"_parent": {
+						"$ref": "AAAAAAFt9gOBOQq9Cao="
+					},
+					"name": "FlowchartDiagram1",
+					"ownedViews": [
+						{
+							"_type": "FCTerminatorView",
+							"_id": "AAAAAAFt9gzCEArQIhc=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9gzCDwrO6Z8="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFt9gzCEArRoOQ=",
+									"_parent": {
+										"$ref": "AAAAAAFt9gzCEArQIhc="
+									},
+									"font": "Arial;13;0",
+									"left": 402,
+									"top": 122,
+									"width": 68.63720703125,
+									"height": 13,
+									"text": "开始",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 392,
+							"top": 112,
+							"width": 88.63720703125,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFt9gzCEArRoOQ="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFt9g0QdgrbksE=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9g0QdQrZCVA="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFt9g0QdgrcuQo=",
+									"_parent": {
+										"$ref": "AAAAAAFt9g0QdgrbksE="
+									},
+									"font": "Arial;13;0",
+									"left": 362,
+									"top": 202,
+									"width": 143,
+									"height": 13,
+									"text": "读取相同姓名的论文数据",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 352,
+							"top": 192,
+							"width": 163,
+							"height": 46,
+							"nameLabel": {
+								"$ref": "AAAAAAFt9g0QdgrcuQo="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFt9g0QyQrjkWg=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9g0QyQrhIg8="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFt9g0QyQrkZMU=",
+									"_parent": {
+										"$ref": "AAAAAAFt9g0QyQrjkWg="
+									},
+									"model": {
+										"$ref": "AAAAAAFt9g0QyQrhIg8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 448,
+									"top": 161,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFt9g0QyQrjkWg="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFt9g0QdgrbksE="
+							},
+							"tail": {
+								"$ref": "AAAAAAFt9gzCEArQIhc="
+							},
+							"lineStyle": 2,
+							"points": "434:144;434:192",
+							"nameLabel": {
+								"$ref": "AAAAAAFt9g0QyQrkZMU="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFt9g2S1Aryb+Q=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9g2S1ArwO7Q="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFt9g2S1ArzATw=",
+									"_parent": {
+										"$ref": "AAAAAAFt9g2S1Aryb+Q="
+									},
+									"font": "Arial;13;0",
+									"left": 298,
+									"top": 306,
+									"width": 286,
+									"height": 13,
+									"text": "筛选，只剩题名、作者、单位、文献来源、关键词",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 288,
+							"top": 296,
+							"width": 306,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFt9g2S1ArzATw="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFt9g2TLQr6ulU=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9g2TLQr4uLE="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFt9g2TLQr7aIo=",
+									"_parent": {
+										"$ref": "AAAAAAFt9g2TLQr6ulU="
+									},
+									"model": {
+										"$ref": "AAAAAAFt9g2TLQr4uLE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 450,
+									"top": 259,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFt9g2TLQr6ulU="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFt9g2S1Aryb+Q="
+							},
+							"tail": {
+								"$ref": "AAAAAAFt9g0QdgrbksE="
+							},
+							"lineStyle": 2,
+							"points": "436:237;436:296",
+							"nameLabel": {
+								"$ref": "AAAAAAFt9g2TLQr7aIo="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAFt9hBCsws4DRk=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9hBCsws2U6I="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFt9hBCsws5DqI=",
+									"_parent": {
+										"$ref": "AAAAAAFt9hBCsws4DRk="
+									},
+									"font": "Arial;13;0",
+									"left": 341.2958984375,
+									"top": 391.5,
+									"width": 202.591796875,
+									"height": 15,
+									"text": "题名、文献来源、关键词差异>阈值",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 240,
+							"top": 384,
+							"width": 405.18359375,
+							"height": 30,
+							"nameLabel": {
+								"$ref": "AAAAAAFt9hBCsws5DqI="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFt9hBDBwtAhmE=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9hBDBws+ucU="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFt9hBDBwtBeq4=",
+									"_parent": {
+										"$ref": "AAAAAAFt9hBDBwtAhmE="
+									},
+									"model": {
+										"$ref": "AAAAAAFt9hBDBws+ucU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 454,
+									"top": 349,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFt9hBDBwtAhmE="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFt9hBCsws4DRk="
+							},
+							"tail": {
+								"$ref": "AAAAAAFt9g2S1Aryb+Q="
+							},
+							"lineStyle": 2,
+							"points": "440:328;440:384",
+							"nameLabel": {
+								"$ref": "AAAAAAFt9hBDBwtBeq4="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFt9hJAkwtmOX0=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9hJAkQtktWE="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFt9hJAkwtnzIo=",
+									"_parent": {
+										"$ref": "AAAAAAFt9hJAkwtmOX0="
+									},
+									"font": "Arial;13;0",
+									"left": 874,
+									"top": 618,
+									"width": 54.18994140625,
+									"height": 13,
+									"text": "不同作者",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 864,
+							"top": 608,
+							"width": 74.18994140625,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFt9hJAkwtnzIo="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFt9hJA6Atuoew=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9hJA6AtsvY8="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFt9hJA6QtvhWk=",
+									"_parent": {
+										"$ref": "AAAAAAFt9hJA6Atuoew="
+									},
+									"model": {
+										"$ref": "AAAAAAFt9hJA6AtsvY8="
+									},
+									"font": "Arial;13;0",
+									"left": 744,
+									"top": 383,
+									"width": 31.7890625,
+									"height": 13,
+									"alpha": -1.637809972427254,
+									"distance": 149.33519344079613,
+									"hostEdge": {
+										"$ref": "AAAAAAFt9hJA6Atuoew="
+									},
+									"edgePosition": 1,
+									"text": "False"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFt9hJAkwtmOX0="
+							},
+							"tail": {
+								"$ref": "AAAAAAFt9hBCsws4DRk="
+							},
+							"lineStyle": 2,
+							"points": "644:400;908:400;908:608",
+							"nameLabel": {
+								"$ref": "AAAAAAFt9hJA6QtvhWk="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAFt9hPmBQuMmeg=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9hPmBQuK8Y4="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFt9hPmBQuNhoU=",
+									"_parent": {
+										"$ref": "AAAAAAFt9hPmBQuMmeg="
+									},
+									"font": "Arial;13;0",
+									"left": 341.2958984375,
+									"top": 487.5,
+									"width": 202.591796875,
+									"height": 15,
+									"text": "合作者、单位差异>阈值",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 240,
+							"top": 480,
+							"width": 405.18359375,
+							"height": 30,
+							"nameLabel": {
+								"$ref": "AAAAAAFt9hPmBQuNhoU="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFt9hPmXQuUvm4=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9hPmXQuS5NE="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFt9hPmXQuVNPc=",
+									"_parent": {
+										"$ref": "AAAAAAFt9hPmXQuUvm4="
+									},
+									"model": {
+										"$ref": "AAAAAAFt9hPmXQuS5NE="
+									},
+									"font": "Arial;13;0",
+									"left": 441,
+									"top": 439,
+									"width": 26.24755859375,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFt9hPmXQuUvm4="
+									},
+									"edgePosition": 1,
+									"text": "True"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFt9hPmBQuMmeg="
+							},
+							"tail": {
+								"$ref": "AAAAAAFt9hBCsws4DRk="
+							},
+							"lineStyle": 2,
+							"points": "440:413;440:480",
+							"nameLabel": {
+								"$ref": "AAAAAAFt9hPmXQuVNPc="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFt9hSovwu11RE=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9hSovwuzVDY="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFt9hSovwu2urM=",
+									"_parent": {
+										"$ref": "AAAAAAFt9hSovwu11RE="
+									},
+									"font": "Arial;13;0",
+									"left": 410,
+									"top": 618,
+									"width": 54.18994140625,
+									"height": 13,
+									"text": "同一作者",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 400,
+							"top": 608,
+							"width": 74.18994140625,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFt9hSovwu2urM="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFt9hSpFQu9TfI=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9hSpFQu7vLs="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFt9hSpFgu+uV8=",
+									"_parent": {
+										"$ref": "AAAAAAFt9hSpFQu9TfI="
+									},
+									"model": {
+										"$ref": "AAAAAAFt9hSpFQu7vLs="
+									},
+									"font": "Arial;13;0",
+									"left": 439,
+									"top": 551,
+									"width": 26.24755859375,
+									"height": 13,
+									"alpha": 1.6539372897178777,
+									"distance": 12.041594578792296,
+									"hostEdge": {
+										"$ref": "AAAAAAFt9hSpFQu9TfI="
+									},
+									"edgePosition": 1,
+									"text": "True"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFt9hSovwu11RE="
+							},
+							"tail": {
+								"$ref": "AAAAAAFt9hPmBQuMmeg="
+							},
+							"lineStyle": 2,
+							"points": "440:509;440:608",
+							"nameLabel": {
+								"$ref": "AAAAAAFt9hSpFgu+uV8="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFt9hUsqQvMV60=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gOBOQq+qNA="
+							},
+							"model": {
+								"$ref": "AAAAAAFt9hUsqQvK1qU="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFt9hUsqgvNw8E=",
+									"_parent": {
+										"$ref": "AAAAAAFt9hUsqQvMV60="
+									},
+									"model": {
+										"$ref": "AAAAAAFt9hUsqQvK1qU="
+									},
+									"font": "Arial;13;0",
+									"left": 744,
+									"top": 479,
+									"width": 31.7890625,
+									"height": 13,
+									"alpha": -1.629124342488064,
+									"distance": 137.23337786413333,
+									"hostEdge": {
+										"$ref": "AAAAAAFt9hUsqQvMV60="
+									},
+									"edgePosition": 1,
+									"text": "False"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFt9hJAkwtmOX0="
+							},
+							"tail": {
+								"$ref": "AAAAAAFt9hPmBQuMmeg="
+							},
+							"lineStyle": 2,
+							"points": "644:494;896:494;896:608",
+							"nameLabel": {
+								"$ref": "AAAAAAFt9hUsqgvNw8E="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCTerminator",
+					"_id": "AAAAAAFt9gzCDwrO6Z8=",
+					"_parent": {
+						"$ref": "AAAAAAFt9gOBOQq9Cao="
+					},
+					"name": "开始",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFt9g0QyQrhIg8=",
+							"_parent": {
+								"$ref": "AAAAAAFt9gzCDwrO6Z8="
+							},
+							"source": {
+								"$ref": "AAAAAAFt9gzCDwrO6Z8="
+							},
+							"target": {
+								"$ref": "AAAAAAFt9g0QdQrZCVA="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFt9g0QdQrZCVA=",
+					"_parent": {
+						"$ref": "AAAAAAFt9gOBOQq9Cao="
+					},
+					"name": "读取相同姓名的论文数据",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFt9g2TLQr4uLE=",
+							"_parent": {
+								"$ref": "AAAAAAFt9g0QdQrZCVA="
+							},
+							"source": {
+								"$ref": "AAAAAAFt9g0QdQrZCVA="
+							},
+							"target": {
+								"$ref": "AAAAAAFt9g2S1ArwO7Q="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFt9g2S1ArwO7Q=",
+					"_parent": {
+						"$ref": "AAAAAAFt9gOBOQq9Cao="
+					},
+					"name": "筛选，只剩题名、作者、单位、文献来源、关键词",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFt9hBDBws+ucU=",
+							"_parent": {
+								"$ref": "AAAAAAFt9g2S1ArwO7Q="
+							},
+							"source": {
+								"$ref": "AAAAAAFt9g2S1ArwO7Q="
+							},
+							"target": {
+								"$ref": "AAAAAAFt9hBCsws2U6I="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAFt9hBCsws2U6I=",
+					"_parent": {
+						"$ref": "AAAAAAFt9gOBOQq9Cao="
+					},
+					"name": "题名、文献来源、关键词差异>阈值",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFt9hJA6AtsvY8=",
+							"_parent": {
+								"$ref": "AAAAAAFt9hBCsws2U6I="
+							},
+							"name": "False",
+							"source": {
+								"$ref": "AAAAAAFt9hBCsws2U6I="
+							},
+							"target": {
+								"$ref": "AAAAAAFt9hJAkQtktWE="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFt9hPmXQuS5NE=",
+							"_parent": {
+								"$ref": "AAAAAAFt9hBCsws2U6I="
+							},
+							"name": "True",
+							"source": {
+								"$ref": "AAAAAAFt9hBCsws2U6I="
+							},
+							"target": {
+								"$ref": "AAAAAAFt9hPmBQuK8Y4="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFt9hJAkQtktWE=",
+					"_parent": {
+						"$ref": "AAAAAAFt9gOBOQq9Cao="
+					},
+					"name": "不同作者"
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAFt9hPmBQuK8Y4=",
+					"_parent": {
+						"$ref": "AAAAAAFt9gOBOQq9Cao="
+					},
+					"name": "合作者、单位差异>阈值",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFt9hSpFQu7vLs=",
+							"_parent": {
+								"$ref": "AAAAAAFt9hPmBQuK8Y4="
+							},
+							"name": "True",
+							"source": {
+								"$ref": "AAAAAAFt9hPmBQuK8Y4="
+							},
+							"target": {
+								"$ref": "AAAAAAFt9hSovwuzVDY="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFt9hUsqQvK1qU=",
+							"_parent": {
+								"$ref": "AAAAAAFt9hPmBQuK8Y4="
+							},
+							"name": "False",
+							"source": {
+								"$ref": "AAAAAAFt9hPmBQuK8Y4="
+							},
+							"target": {
+								"$ref": "AAAAAAFt9hJAkQtktWE="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFt9hSovwuzVDY=",
+					"_parent": {
+						"$ref": "AAAAAAFt9gOBOQq9Cao="
+					},
+					"name": "同一作者"
+				}
+			]
+		}
+	]
+}

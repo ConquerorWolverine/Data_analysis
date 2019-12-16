@@ -1,0 +1,69 @@
+import numpy as np
+
+
+class PageRankIterator:
+    max_iterations = 100  # 最大迭代次数
+    min_epsilon = 0.0001   # 收敛域值
+    M = []  # 转移矩阵
+
+    PageRank = []
+
+    def __init__(self, M, max_iterations=100, min_epsilon=0.0001):     # 初始化
+        self.max_iterations = max_iterations
+        self.min_epsilon = min_epsilon
+        self.M = M
+
+    def page_rank(self):
+        graph_size = np.size(self.M, 0)    # 得到图的节点个数
+        self.PageRank = np.ones([graph_size, 1])/graph_size     # 初始化各个页面被访问概率
+        # flag = False    flag有什么用啊？
+        for i in range(self.max_iterations):
+            old_page_rank = self.PageRank
+            self.PageRank = np.dot(self.M, self.PageRank)
+            change = np.abs(self.PageRank - old_page_rank)
+            if np.sum(change) < self.min_epsilon:
+                # flag = 1
+                break
+
+    def my_print(self):
+        print(self.PageRank)
+        print("")
+
+
+M = np.array([[0, 0, 0, 0.2, 0, 0, 0, 0, 0, 0],
+              [0, 0, 0, 0.2, 0, 1/3, 0, 0, 0, 0],
+              [0, 0, 0, 0, 0, 1/3, 0, 1, 1, 0],
+              [0, 0.2, 0, 0, 0, 0, 0, 0, 0, 0],
+              [0, 0.2, 0, 0.2, 0, 0, 0, 0, 0, 0],
+              [0, 0.2, 1, 0, 0.5, 0, 0, 0, 0, 0],
+              [0, 0.2, 0, 0.2, 0, 1/3, 0, 0, 0, 0],
+              [1, 0, 0, 0.2, 0, 0, 0, 0, 0, 0],
+              [0, 0.2, 0, 0, 0, 0, 0.5, 0, 0, 1],
+              [0, 0, 0, 0, 0.5, 0, 0.5, 0, 0, 0]], dtype=float)
+M1 = np.array([[0, 0.5, 1, 0], 
+               [1/3, 0, 0, 0.5], 
+               [1/3, 0, 0, 0.5], 
+               [1/3, 0.5, 0, 0]], dtype=float)
+M2 = np.array([[0, 0.5, 0, 0],
+               [1/3, 0, 0, 0.5],
+               [1/3, 0, 0, 0.5], 
+               [1/3, 0.5, 0, 0]], dtype=float)
+M3 = np.array([[0, 0.5, 0], 
+               [0.5, 0, 1],
+               [0.5, 0.5, 0]], dtype=float)
+
+page_rank_iterator1 = PageRankIterator(M)
+page_rank_iterator1.page_rank()
+page_rank_iterator1.my_print()
+
+page_rank_iterator2 = PageRankIterator(M1)
+page_rank_iterator2.page_rank()
+page_rank_iterator2.my_print()
+
+page_rank_iterator3 = PageRankIterator(M2)
+page_rank_iterator3.page_rank()
+page_rank_iterator3.my_print()
+
+page_rank_iterator4 = PageRankIterator(M3)
+page_rank_iterator4.page_rank()
+page_rank_iterator4.my_print()
